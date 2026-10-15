@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "fusionMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "http://127.0.0.1:27182/mcp",
+        "--transport",
+        "http-only"
+      ]
+    },
+    "kicad": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\freim\\Documents\\GitHub\\KiCAD-MCP-Server\\dist\\index.js"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\Program Files\\KiCad\\10.0\\lib\\python3\\dist-packages",
+        "NODE_ENV": "production",
+        "LOG_LEVEL": "info",
+        "KICAD_AUTO_LAUNCH": "false",
+        "KICAD_INTERACTIVE_SCHEMATIC": "1"
+      }
+    }
+  }
+}
